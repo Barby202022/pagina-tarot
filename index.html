@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Místico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #1e1b2e;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #2e2b3c;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      color: #d4af37;
+      font-size: 2.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #d4af37;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-family: 'Cinzel Decorative', cursive;
+      color: #d4af37;
+      margin-bottom: 1rem;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .testimonios blockquote {
+      margin: 1rem 0;
+      font-style: italic;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-left: 4px solid #d4af37;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #d4af37;
+      color: #1e1b2e;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2e2b3c;
+      color: #ccc;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tarot Místico</h1>
+    <nav>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="servicios">
+    <h2>Lecturas Disponibles</h2>
+    <p>Ofrecemos lecturas especializadas en el amor, el dinero, la salud y tu camino espiritual. Cada consulta es única y personalizada.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería de Cartas</h2>
+    <div class="galeria">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_00_Fool.jpg" alt="El Loco">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_01_Magician.jpg" alt="El Mago">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/TheHighPriestess.jpg" alt="La Sacerdotisa">
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonios">
+      <blockquote>"Increíble precisión, sentí que realmente conectó con mi energía. ¡Volveré sin duda!" – Mariana S.</blockquote>
+      <blockquote>"La lectura me dio paz y dirección en un momento difícil. Muy agradecida." – Pablo R.</blockquote>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea placeholder="Tu mensaje..." rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tarot Místico - Todos los derechos reservados | Síguenos en @TarotMistico</p>
+  </footer>
+</body>
+</html>
